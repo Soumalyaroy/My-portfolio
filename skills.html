@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background: rgb(23,23,23);
+}
+
+*{
+            margin: 0;
+            padding: 0;
+        }
+        .area{
+    background: rgb(23, 23, 23);  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(248, 243, 103, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+.swatch {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 100px;
+}
+.swatch div {
+  width: 120px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  border-radius: 5px;
+  border-top: solid 2px rgba(0, 0, 0, 0.2);
+  border-left: solid 3px rgba(255, 255, 255, 0.2);
+  border-bottom: solid 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  box-sizing: border-box;
+  transform-origin: center 90%;
+  display: inline-block;
+  backface-visibility: hidden;
+  margin-left: -35px;
+  transform: rotate(0deg);
+}
+.swatch div:nth-child(1) {
+  background-color: #f4ff9f;
+  animation: swatch-purple-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(2) {
+  background-color: #ffc6b0;
+  animation: swatch-blue-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(3) {
+  background-color: #bffdb2;
+  animation: swatch-green-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(4) {
+  background-color: #b8b0ff;
+  animation: swatch-yellow-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(5) {
+    background-color: #ffb0e6;
+  animation: swatch-orange-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.swatch div:nth-child(6) {
+    background-color: #b0fbff;
+  animation: swatch-red-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+@keyframes swatch-purple-motion {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: rotate(-90deg);
+  }
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes swatch-blue-motion {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: rotate(-50deg);
+  }
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes swatch-green-motion {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: rotate(-15deg);
+  }
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes swatch-yellow-motion {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: rotate(20deg);
+  }
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes swatch-orange-motion {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: rotate(50deg);
+  }
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes swatch-red-motion {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%,
+  70% {
+    transform: rotate(90deg);
+  }
+  90%,
+  10% {
+    transform: rotate(0deg);
+  }
+}
+.ht img{
+    width: 100px;
+    
+}
+.css img{
+    width: 100px;
+}
+.js img{
+    width: 110px;
+}
+.py img{
+    width: 110px;
+}
+.c img{
+    width: 110px;
+}
+.db img{
+    width: 110px;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="area" >
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </div >
+    <div class="swatch">
+        <div class="ht">
+            <img src="html1.png" alt="">
+           <p>HTML</p> 
+        </div>
+        <div class="css">
+            <img src="css1.png" alt="">
+           <p>CSS</p>
+        </div>
+        <div class="js">
+            <img src="js1.png" alt="">
+           <p>JS</p>
+        </div>
+        <div class="py">
+            <img src="py1.png" alt="">
+           <p>PYTHON</p>
+        </div>
+        <div class="c">
+            <img src="c1.png" alt="">
+           <p>C</p>
+        </div>
+        <div class="db">
+            <img src="dbms1.png" alt="">
+           <p>DBMS</p>
+        </div>
+      </div>
+    </main>
+</body>
+</html>

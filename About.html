@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="Heading">About Soumalya Roy</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(48,47,47);
+        }
+        nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li{
+    font-size: 1.2rem;
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(217, 221, 16);
+}
+nav ul li a:hover{
+   color: aliceblue;
+}
+.lefta{
+    color: rgb(217, 221, 16);
+    font-size: 1.5rem;
+    font-style: bold;
+}
+        body{
+            background-color: rgb(23,23,23);
+        }
+        .first{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            margin: 40px 0;
+        }
+        .first> div{
+            width: 30%; 
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        #element1{
+            color: rgb(223,220,11);
+        }
+
+        .second{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            margin: 40px 0;
+        }
+        .second> div{
+            width: 30%; 
+        }
+        .lefts{
+            font-size: 1.5rem;
+        }
+        .rights img{
+            width: 70%;
+        }
+        #element2{
+            color: rgb(223,220,11);
+        }
+        .third{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            margin: 40px 0;
+        }
+        .third> div{
+            width: 30%; 
+        }
+        .leftm{
+            font-size: 1.5rem;
+        }
+        .rightm img{
+            width: 40%;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        #element3{
+            color: rgb(223,220,11);
+        }
+        .fb{
+            background-color: rgb(35, 34, 34);
+            color:  white;
+        }
+        .first div button{
+           border-style: double;
+           border-color: white;
+           padding-left: 3%;
+           padding-right: 3%;
+           padding-top: 1%;
+           padding-bottom: 1%;
+        }
+        .sb{
+            background-color: rgb(35, 34, 34);
+            color:  white;
+        }
+        .second div button{
+           border-style: double;
+           border-color: white;
+           padding-left: 3%;
+           padding-right: 3%;
+           padding-top: 1%;
+           padding-bottom: 1%;
+        }
+        .tb{
+            background-color: rgb(35, 34, 34);
+            color:  white;
+        }
+        .third div button{
+           border-style: double;
+           border-color: white;
+           padding-left: 3%;
+           padding-right: 3%;
+           padding-top: 1%;
+           padding-bottom: 1%;
+        }
+        .left button a{
+            text-decoration: none;
+            color: white;
+        }
+        .left button a:hover{
+            color:rgb(223,220,11) ;
+        }
+        .lefts button a{
+            text-decoration: none;
+            color: white;
+        }
+        .lefts button a:hover{
+            color:rgb(223,220,11) ;
+        }
+        .leftm button a{
+            text-decoration: none;
+            color: white;
+        }
+        .leftm button a:hover{
+            color:rgb(223,220,11) ;
+        }
+        .flip-box1 {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box1:hover .flip-box-inner1 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front1, .flip-box-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front1 {
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back1 {
+  transform: rotateY(180deg);
+}
+.flip-box-back1 img{
+    width: 50%;
+    border-radius: 50%;
+}
+.flip-box-front1 img{
+      width: 50%;
+}
+
+.photo1{
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px rgb(211, 208, 8),
+    inset -20px 0 80px rgb(242, 255, 167),
+    inset 20px 0 300px rgb(211, 208, 8),
+    inset -20px 0 300px rgb(242, 255, 167),
+    0 0 50px #fff,
+    -10px 0 80px rgb(211, 208, 8),
+    10px 0 80px rgb(242, 255, 167);
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box2:hover .flip-box-inner2 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front2, .flip-box-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front2 {
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back2 {
+  transform: rotateY(180deg);
+}
+.flip-box-back2 img{
+    width: 50%;
+    border-radius: 50%;
+}
+.flip-box-front2 img{
+      width: 50%;
+}
+
+.photo2{
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px rgb(211, 208, 8),
+    inset -20px 0 80px rgb(242, 255, 167),
+    inset 20px 0 300px rgb(211, 208, 8),
+    inset -20px 0 300px rgb(242, 255, 167),
+    0 0 50px #fff,
+    -10px 0 80px rgb(211, 208, 8),
+    10px 0 80px rgb(242, 255, 167);
+}
+.flip-box3 {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box3:hover .flip-box-inner3 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front3, .flip-box-back3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front3 {
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back3 {
+  transform: rotateY(180deg);
+}
+.flip-box-back3 img{
+    width: 50%;
+    border-radius: 50%;
+}
+.flip-box-front3 img{
+      width: 50%;
+}
+
+.photo3{
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px rgb(23,23,23),
+    inset -20px 0 80px rgb(23,23,23),
+    inset 20px 0 300px rgb(23,23,23),
+    inset -20px 0 300px rgb(23,23,23),
+    0 0 50px #fff,
+    -10px 0 80px rgb(211, 208, 8),
+    10px 0 80px rgb(242, 255, 167);
+}
+
+    </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <div class="lefta">About Soumalya Roy</div>
+            <div class="righta">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+     </header>
+     <main>
+        <section class="first">
+            <div class="left">
+                <span id="element1"></span>
+                <div><button class="fb"><a href="secondary.html">Download MarkSheet</a></button></div>
+            </div>
+            <div class="flip-box1">
+                <div class="flip-box-inner1">
+                  <div class="flip-box-front1">
+                    <img src="schoollogo1.jpeg" alt="" class="photo1">
+                  </div>
+                  <div class="flip-box-back1">
+                    <img src="wbbse.png" alt="">
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="second">
+            <div class="lefts">
+                <span id="element2"></span>
+                <div><button class="sb"><a href="hs.html">Download MarkSheet</a></button></div>
+            </div>
+            <div class="flip-box2">
+                <div class="flip-box-inner2">
+                  <div class="flip-box-front2">
+                    <img src="schoollogo1.jpeg" alt="" class="photo2">
+                  </div>
+                  <div class="flip-box-back2">
+                    <img src="wbchse.png" alt="">
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="third">
+            <div class="leftm">
+                <span id="element3"></span>
+                <div><button class="tb"><a href="kiit.html">Download MarkSheets</a></button></div>
+            </div>
+            <div class="flip-box3">
+                <div class="flip-box-inner3">
+                  <div class="flip-box-front3">
+                    <img src="KIITlogo1.png" alt="" class="photo3">
+                  </div>
+                  <div class="flip-box-back3">
+                    <img src="btech.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+        </section>
+
+
+     </main>
+       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <script>
+          var typed = new Typed('#element1', {
+            strings: ['Passed Secondary Education From Rathipur Barada Banipith (H.S.) with a 85.16% Marks in State Board'],
+            typeSpeed: 80,
+          });
+        </script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+           var typed = new Typed('#element2', {
+             strings: ['Passed Higher Secondary Education From Rathipur Barada Banipith (H.S.) with a 85% Marks in State Board'],
+             typeSpeed: 80,
+           });
+         </script>
+         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+         <script>
+            var typed = new Typed('#element3', {
+              strings: ['Currently Persuing B.Tech degree From Kalinga Institute Of Industrial Technology with a 8.39 till 6th semester'],
+              typeSpeed: 80,
+            });
+          </script>
+</body>
+</html>
